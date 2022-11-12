@@ -36,6 +36,14 @@ vim.opt.guifont = "monospace:h17"               -- the font used in graphical ne
 
 vim.opt.shortmess:append "c"
 
+vim.g.vimwiki_list = {
+    {
+        --- path = '/home/xx/Documents/singularityOffice/wiki',
+        syntax = 'markdown',
+        ext = '.md',
+    }
+}
+
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work

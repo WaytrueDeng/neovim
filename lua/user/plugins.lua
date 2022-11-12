@@ -73,7 +73,8 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim'
-
+  -- nvim-colorizer--
+  use "norcalli/nvim-colorizer.lua"
   --- vim-notify
 
   use "rcarriga/nvim-notify"
