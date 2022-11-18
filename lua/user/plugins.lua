@@ -52,13 +52,15 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
   use "folke/which-key.nvim"
   use "vimwiki/vimwiki"
+  use "ActivityWatch/aw-watcher-vim"
 
 
 
 
   --- My Color Scheme---
   use "overcache/NeoSolarized" 
-
+  use { "ellisonleao/gruvbox.nvim" }
+  use "folke/tokyonight.nvim"
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions

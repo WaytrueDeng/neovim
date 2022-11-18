@@ -16,9 +16,13 @@ s({trig="title", dscr="expand markdown title"},
     ---
     title:  <>
     --- 
+    
+    ### Contents
+    - <>
     ]],
     -- The insert node is placed in the <> angle brackets
-    { i(1) },
+    { i(1),
+      i(2)},
     -- This is where I specify that angle brackets are used as node positions.
     { delimiters = "<>" }
   )
@@ -34,6 +38,16 @@ s({trig="<[",snippetType="autosnippet"},
   )
 ),
 
+s({trig="<img",snippetType="autosnippet"},
+  fmta(
+  [[![<>](/note-images/<>)]],
+
+    {
+      i(1),
+      rep(1),  -- this node repeats insert node i(1)
+    }
+  )
+),
 s({trig="<re",snippetType="autosnippet"},
   fmta(
   [[
@@ -70,6 +84,28 @@ s({trig="<co",snippettype="autosnippet"},
     }
   )
 ),
+s({trig="<mark",snippettype="autosnippet"},
+  fmta(
+  [[
+  <<mark>><><</mark>>
+  ]],
+
+    {
+      i(1),
+    }
+  )
+),
+s({trig="<fn",snippettype="autosnippet"},
+  fmta(
+  [[
+  [^<>]
+  ]],
+
+    {
+      i(1),
+    }
+  )
+),
 s({trig="<mn",snippetType="autosnippet"},
   fmta(
   [[
@@ -81,5 +117,66 @@ s({trig="<mn",snippetType="autosnippet"},
       i(1),
     }
   )
+),
+
+s({trig="<an",snippetType="autosnippet"},
+  fmta(
+  [[
+  <<span class="answer">><><</span>>
+  ]],
+
+    {
+      i(1),
+    }
+  )
+),
+s({trig="<bre",snippetType="autosnippet"},
+  fmta(
+  [[
+  <<span class="bred">><><</span>>
+  ]],
+
+    {
+      i(1),
+    }
+  )
+),
+
+s({trig="<bor",snippetType="autosnippet"},
+  fmta(
+  [[
+  <<span class="born">><><</span>>
+  ]],
+
+    {
+      i(1),
+    }
+  )
+),
+
+s({trig="<bgr",snippetType="autosnippet"},
+  fmta(
+  [[
+  <<span class="bgrn">><><</span>>
+  ]],
+
+    {
+      i(1),
+    }
+  )
+),
+s({trig="<me",snippetType="autosnippet"},
+  fmta(
+  [[
+{{<< mermaid >>}}
+<>
+{{<< /mermaid >>}}
+  ]],
+
+    {
+      i(1),
+    }
+  )
 )
+
 }

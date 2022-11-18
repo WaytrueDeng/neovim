@@ -38,7 +38,7 @@ vim.opt.shortmess:append "c"
 
 vim.g.vimwiki_list = {
     {
-        --- path = '/home/xx/Documents/singularityOffice/wiki',
+        path = '~/Study/myfinal/content/',
         syntax = 'markdown',
         ext = '.md',
     }
