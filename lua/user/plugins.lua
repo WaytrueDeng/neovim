@@ -53,6 +53,7 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "vimwiki/vimwiki"
   use "ActivityWatch/aw-watcher-vim"
+  use "ggandor/leap.nvim" 
 
 
 

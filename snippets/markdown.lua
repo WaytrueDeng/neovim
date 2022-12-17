@@ -119,6 +119,18 @@ s({trig="<mn",snippetType="autosnippet"},
   )
 ),
 
+s({trig="<log",snippetType="autosnippet"},
+  fmta(
+  [[
+  ### Log
+  - <>
+  ]],
+
+    {
+      i(1),
+    }
+  )
+),
 s({trig="<an",snippetType="autosnippet"},
   fmta(
   [[
@@ -165,12 +177,22 @@ s({trig="<bgr",snippetType="autosnippet"},
     }
   )
 ),
+
+s({trig="<svg",snippetType="autosnippet"},
+  fmta(
+  [[
+  <<object type="image/svg+xml" style="width:100%;" data="/note-images/<>">><</object>>
+  ]],
+
+    {
+      i(1),
+    }
+  )
+),
 s({trig="<me",snippetType="autosnippet"},
   fmta(
   [[
-{{<< mermaid >>}}
-<>
-{{<< /mermaid >>}}
+<<div class="mermaid">><><</div>>
   ]],
 
     {

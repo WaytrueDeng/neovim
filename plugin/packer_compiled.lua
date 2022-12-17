@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/waytrue/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["leap.nvim"] = {
+    loaded = true,
+    path = "/Users/waytrue/.local/share/nvim/site/pack/packer/start/leap.nvim",
+    url = "https://github.com/ggandor/leap.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/waytrue/.local/share/nvim/site/pack/packer/start/lualine.nvim",
