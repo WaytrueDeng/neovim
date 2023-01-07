@@ -51,16 +51,18 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use "akinsho/toggleterm.nvim"
   use "folke/which-key.nvim"
-  use "vimwiki/vimwiki"
   use "ActivityWatch/aw-watcher-vim"
   use "ggandor/leap.nvim" 
+  
+  --- zettlekasten ---
+  use "renerocksai/telekasten.nvim"
 
 
 
 
   --- My Color Scheme---
   use "overcache/NeoSolarized" 
-  use { "ellisonleao/gruvbox.nvim" }
+  use "ellisonleao/gruvbox.nvim"
   use "folke/tokyonight.nvim"
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -68,6 +70,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -83,6 +87,13 @@ return packer.startup(function(use)
   use "rcarriga/nvim-notify"
   -- Git
   use "lewis6991/gitsigns.nvim"
+
+  -- LSP ---
+  
+  use "neovim/nvim-lspconfig" -- enable LSP
+  use "williamboman/mason.nvim" -- simple to use language server installer
+  use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
+  use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
